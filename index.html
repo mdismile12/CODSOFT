@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-transparent">
+    
+    
+  <div
+    class="rounded-3xl bg-[#1E90FF] p-6 w-[320px]"
+  >
+    <div
+      id="display"
+      class="bg-[#D9EEFF] rounded-md h-16 mb-6 flex items-center justify-end pr-6 font-orbitron text-black text-4xl select-none break-words"
+      style="font-family: 'Orbitron', monospace;"
+    >
+      0
+    </div>
+    <div class="grid grid-cols-4 gap-4 mb-4">
+      <button
+        id="all-clear"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        AC
+      </button>
+      <button
+        id="clear"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        C
+      </button>
+      <button
+        data-value="("
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        (
+      </button>
+      <button
+        data-value=")"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        )
+      </button>
+    </div>
+    <div class="grid grid-cols-4 gap-4">
+      <button
+        data-value="7"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        7
+      </button>
+      <button
+        data-value="8"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        8
+      </button>
+      <button
+        data-value="9"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        9
+      </button>
+      <button
+        data-value="+"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        +
+      </button>
+
+      <button
+        data-value="4"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        4
+      </button>
+      <button
+        data-value="5"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        5
+      </button>
+      <button
+        data-value="6"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        6
+      </button>
+      <button
+        data-value="-"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        &minus;
+      </button>
+
+      <button
+        data-value="1"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        1
+      </button>
+      <button
+        data-value="2"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        2
+      </button>
+      <button
+        data-value="3"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        3
+      </button>
+      <button
+        id="equals"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        =
+      </button>
+
+      <button
+        data-value="0"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4 col-span-2"
+      >
+        0
+      </button>
+      <button
+        data-value="*"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        &times;
+      </button>
+      <button
+        data-value="/"
+        class="bg-[#155DBA] rounded-md text-white text-3xl font-sans font-normal py-4"
+      >
+        &divide;
+      </button>
+    </div>
+  </div>
+
+
+    <script src="sc.js"></script>
+</body>
+</html>
