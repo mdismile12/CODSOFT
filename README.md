@@ -14,9 +14,7 @@ A collection of web development tasks completed during my internship at CODSOFT,
 - [Technologies](#technologies)  
 - [Getting Started](#getting-started)  
 - [Folder Structure](#folder-structure)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
+ 
 
 ---
 
