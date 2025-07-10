@@ -52,18 +52,5 @@ These projects highlight my ability to create clean, user-friendly web interface
 - **CSS3** – Flexbox/Grid layouts, animations, media queries  
 - **JavaScript** – DOM manipulation and event handling  
 
----
 
-## Getting Started
-
-To run or explore the projects locally:
-
-```bash
-# Clone the repo
-git clone https://github.com/mdismile12/CODSOFT.git
-
-# Navigate to the project folder
-cd CODSOFT/<project-folder>
-
-# Open `index.html` in your browser
 
