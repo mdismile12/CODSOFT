@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding:0;;
+    background-color:whitesmoke;
+}
+body{
+    text-align: center;
+    opacity: 0;
+    animation: fadeIN 2s ease forwards;
+    background: linear-gradient(
+          to right,
+          #00b894,
+          #e67e22
+        ); /* teal to carrot */
+}
+@keyframes fadeIN {
+    to{
+        opacity: 1;
+    }
+    
+}
+
+h2
+{
+    display:inline-block;
+    justify-content:center ;
+    color:  black;
+    border: 2px solid ;
+    border-color: aqua;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    font-size: 3rem;
+    padding: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.education
+{
+    background-color: aliceblue;
+    color: #e6740a;
+    font-size: 10rem;
+    font-style: oblique;
+    padding: 5rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 5rem;
+    text-align: left;
+    
+}
+
+.goal
+{
+    background-color: aliceblue;
+    color: #e6740a;
+    font-size: 10rem;
+    font-style: oblique;
+    padding: 5rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+
+.btn
+{
+    display: block;
+    margin: 2rem auto;
+    border: 1px sloid black;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom:1rem ;
+    font-size: 1rem;
+}
+
+
+.hob
+{
+    background-color: aliceblue;
+    color: #e6740a;
+    font-size: 10rem;
+    font-style: oblique;
+    padding: 5rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 5rem;
+    text-align: left;
+}
+
+.int
+{
+    background-color: aliceblue;
+    color: #e6740a;
+    font-size: 10rem;
+    font-style: oblique;
+    padding: 5rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 5rem;
+    text-align: left;
+}
+
+h1{
+    
+    display:inline-block;
+    
+    
+    justify-content:center ;
+    color:  black;
+    border: 5px;
+    border-style:dotted ;
+    border-color: darkred;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    font-size: 3rem;
+    padding: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.hed
+{
+    background: linear-gradient(
+          to right,
+          #00b894,
+          #e67e22
+        ); /* teal to carrot */
+}

@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>My Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #ed8936 0%, #319795 100%);
+      min-height: 100vh;
+      display: flex;
+      text-align:center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+    .project-item {
+      background: rgba(255 255 255 / 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+      color: white;
+      cursor: default;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-item:hover,
+    .project-item:focus-visible {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgb(0 0 0 / 0.3);
+      outline: none;
+    }
+    .project-item::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, #ed8936, #319795, #ed8936, #319795);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      opacity: 0.3;
+      z-index: 0;
+      border-radius: 1rem;
+      filter: blur(30px);
+      pointer-events: none;
+    }
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .project-content {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      display:flex;
+    
+    justify-content:center ;
+    color:  black;
+    border: 5px;
+    border-style:dotted ;
+    border-color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    font-size: 15rem;
+    padding: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    justify-items: center;
+    background-color: aqua;
+    color: black;
+      
+      
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 720px;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: center;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    li {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.4;
+      padding-left: 5rem;
+      text-align: center;
+      align-items: center;
+      position: relative;
+      color: white;
+      user-select: none;
+      margin-top: 2rem;
+    }
+    li::before {
+      content: '➤';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ed8936;
+      font-weight: 900;
+      font-size: 1.75rem;
+      transition: color 0.3s ease;
+    }
+    li:hover::before,
+    li:focus-visible::before {
+      color: #319795;
+    }
+    .working-on {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 1px 6px rgb(0 0 0 / 0.4);
+      position: relative;
+    }
+    .working-on span {
+      background: #319795;
+      padding: 0.3rem 1.2rem;
+      border-radius: 9999px;
+      box-shadow: 0 0 12px #319795aa;
+      animation: pulse 2.5s infinite ease-in-out;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 12px #319795aa;
+        transform: scale(1);
+      }
+      50% {
+        box-shadow: 0 0 24px #319795ff;
+        transform: scale(1.05);
+      }
+    }
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      li {
+        font-size: 1.125rem;
+        padding-left: 2rem;
+      }
+      li::before {
+        font-size: 1.5rem;
+      }
+      .working-on {
+        font-size: 1.25rem;
+      }
+      .working-on span {
+        padding: 0.25rem 1rem;
+      }
+    }
+
+    .btn
+{
+    display: block;
+    margin: 2rem auto;
+    border: 3px sloid black;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom:1rem ;
+    font-size: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1><b>My Projects</b></h1>
+    <ul role="list" aria-label="List of projects">
+      <li tabindex="0" class="project-item" aria-describedby="desc1">
+        <div class="project-content">
+          Online Attendance System for Academic Institute
+          <p id="desc1" class="sr-only">An online attendance system designed for academic institutes to efficiently track and manage student attendance.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc2">
+        <div class="project-content">
+          Studentaidx Platform - Centralized Portal to Share and Get Academic Resources
+          <p id="desc2" class="sr-only">A centralized platform for students to share and access academic resources easily.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc3">
+        <div class="project-content">
+          College Online Seat Management System for Counseling, with Real-Time Tracking of Seat and Allocation Details
+          <p id="desc3" class="sr-only">A real-time seat management system for college counseling with transparent seat allocation tracking.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc4">
+        <div class="project-content">
+          Student Performance Tool
+          <p id="desc4" class="sr-only">A tool to analyze and visualize student performance data for educators.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc3">
+        <div class="project-content">
+          TO DO'S LIST APP
+          <p id="desc3" class="sr-only">A DYNAMIC APP WHRE WE CAN MANAGE OUR TODOS LIST.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc5">
+        <div class="project-content">
+          Personal Portfolio Website
+          <p id="desc5" class="sr-only">A sleek and responsive personal portfolio website showcasing skills and projects.</p>
+        </div>
+      </li>
+      <li tabindex="0" class="project-item" aria-describedby="desc6">
+        <div class="project-content">
+          Professor Personal Website where he can post his blogs, research work, poetry, and latest achievements, skills and all
+          <p id="desc6" class="sr-only">A personal website for a professor to share blogs, research, poetry, achievements, and skills.</p>
+        </div>
+      </li>
+    </ul>
+    <div class="working-on" aria-live="polite" aria-atomic="true">
+      Working upon: <span>Women’s Safety Project,<br> Baby sitting Pro App</span>
+    </div>
+  </main>
+  <button class="btn">BACK TO HOME</button>
+  <script>
+    let btn = document.querySelector(".btn");
+console.log(btn);
+btn.addEventListener("mouseover",() => {
+    btn.style.backgroundColor = "#e6740a";
+    btn.style.color = "balck"
+
+});
+btn.addEventListener("mouseout",() => {
+    btn.style.backgroundColor = "aqua";
+    btn.style.color = "black"
+    
+
+});
+btn.addEventListener("click",() => {
+    window.location.href="portfoli.html";
+    console.log("going to home page");
+
+});
+let h = document.querySelector("h1");
+
+h.addEventListener("mouseover",() =>{
+    h.innerText = "YES!! ITS ALL MY PROJECTS";
+    h.style.backgroundColor = "pink";
+});
+
+h.addEventListener("mouseout",() =>{
+    h.innerText = "My Projects";
+    h.style.backgroundColor = "aqua";
+    
+});
+  </script>
+</body>
+</html>
