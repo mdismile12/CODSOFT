@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume | Md Ismile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+          to right,
+          #00b894,
+          #e67e22
+        ); /* teal to carrot */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        animation: slideUp 0.8s ease-out;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(40px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        color: #00b894;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        margin: 15px;
+        padding: 14px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #e67e22;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+      }
+
+      .btn i {
+        margin-right: 8px;
+      }
+
+      .btn:hover {
+        background-color: #cf711f;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 500px) {
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 10px auto;
+        }
+      }
+      .btn3 {
+        display: block;
+        margin: 2rem auto;
+        border: 1px sloid black;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        margin: 0 auto;
+        border-radius: 2rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Resume</h1>
+      <a class="btn" href="your-resume.pdf" target="_blank">
+        <i class="fas fa-eye"></i> View Resume
+      </a>
+      <a class="btn" href="your-resume.pdf" download="Md-Ismile-Resume.pdf">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+      <button class="btn3">BACK TO HOME</button>
+    </div>
+    
+    <script>
+      let btn = document.querySelector(".btn3");
+      console.log(btn);
+      btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#e6740a";
+        btn.style.color = "balck";
+      });
+      btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "aqua";
+        btn.style.color = "black";
+      });
+      btn.addEventListener("click", () => {
+        window.location.href = "portfoli.html";
+        console.log("going to home page");
+      });
+    </script>
+  </body>
+</html>

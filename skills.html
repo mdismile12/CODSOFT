@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKILL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="skstyl.css" />
+  </head>
+  <body>
+    <header>
+      <h1><b>SKILLS</b></h1>
+    </header>
+    <div class="htmllogo">
+      <i class="fab fa-html5 text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        HTML5,using it i can build a usefull and responsive web pages,UI/UX
+      </h3>
+      <br />
+    </div>
+    <div class="css">
+      <i class="fab fa-css3-alt text-black-600 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        CSS3,using it i can give cool and nice design to web pages also through
+        its moders frameworks
+      </h3>
+    </div>
+    <div class="js">
+      <i class="fab fa-js-square text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        JavaScript,using it i can write logic and can make a website functional
+        and responsive and user freindly
+      </h3>
+    </div>
+    <div class="react">
+      <i class="fab fa-react text-black-600 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600" ,font-size="5rem">
+        React,using it i can save time do things in a minute which takes 10
+        minutes in javaScript
+      </h3>
+    </div>
+
+    <div class="sql">
+      <i class="fas fa-database text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        SQL.i can store data is SQL table using concept of RDBMS and DATABASES
+        like mySQL,FIREBASE databases
+      </h3>
+    </div>
+    <div class="node">
+      <i class="fab fa-node-js text-black-600 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        Node.js,using it i can write BACKEND login and can make a client-server
+        site website
+      </h3>
+    </div>
+    <div class="git">
+      <i class="fab fa-github-alt text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        GitHub,through this i can track and manage changes of my codes and
+        projects
+      </h3>
+    </div>
+    <div class="iot">
+      <i class="fas fa-network-wired text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        Iot,through this i can build hardware with integrated sofware solutions
+        and embedded systems which can solve real world problem
+      </h3>
+    </div>
+    <div class="language">
+      <i class="fas fa-code text-black-500 text-5xl mb-4 mt-5"> </i>
+      <h3 class="font-semibold text-lg text-teal-600">
+        I also know Programming languages like C,Java(OOPS) ,Python(Initials) also Data Structure(Intials),Ai tools,Ai integration. I may switch to them if reqired for enhacement and building solutions.
+      </h3>
+    </div>
+    <button class="btn">BACK TO HOME</button>
+    <script>
+      let btn = document.querySelector(".btn");
+      console.log(btn);
+      btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#e6740a";
+        btn.style.color = "balck";
+      });
+      btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "aqua";
+        btn.style.color = "black";
+      });
+      btn.addEventListener("click", () => {
+        window.location.href = "portfoli.html";
+        console.log("going to home page");
+      });
+    </script>
+  </body>
+</html>
